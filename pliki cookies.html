@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wkretowiertarka</title>
+    <link rel="stylesheet" href="cookies.css">
+</head>
+<body onload="zaladowanie()">
+    <div id="cookies" class="compsoul-cookies content">
+        <p>"Serwis wykorzystuje pliki cookies m.in. w celu poprawienia jej dostępności, personalizacji, obsługi kont użytkowników czy aby zbierać dane, dotyczące ruchu na stronie. Każdy może sam decydować o tym czy dopuszcza pliki cookies, ustawiając odpowiednio swoją przeglądarkę. Więcej informacji znajdziesz w Polityce Prywatności i Regulaminie."<a href="https://pl.wikipedia.org/wiki/Polityka_prywatno%C5%9Bci" target="_blank">Polityka prywatności</a>".</p>
+        <button onclick="accept()">Accept</button>
+      </div>
+</body>
+<script>
+    function accept() {
+        var cookies = document.getElementById("cookies")
+        cookies.style.display = "none"
+        document.cookie = "violettadog"
+    }
+ function ladowanie() {
+      if(document.cookie) {
+        var cookies = document.getElementById("cookies")
+        cookies.style.display = "none"  
+      }
+ } 
+</script>
+</html>
